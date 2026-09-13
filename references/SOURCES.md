@@ -24,6 +24,19 @@ Snapshot verified: 2026-09-13. No third-party source is vendored in this v0. Com
 | [mary13/pair-design-agent-skill](https://github.com/mary13/pair-design-agent-skill/tree/bbdf98a0aea0126b0e9badabe22ac6f96ef7c869) | `bbdf98a0aea0126b0e9badabe22ac6f96ef7c869` | no license file found | research reference only; do not copy |
 | [jiayuewangjavy/conceptual-model-design-skill](https://github.com/jiayuewangjavy/conceptual-model-design-skill/tree/78be2a3cac7e87a2723da381ea23b0c543dc60e5) | `78be2a3cac7e87a2723da381ea23b0c543dc60e5` | MIT | user-owned source adapted locally |
 
+## 2026 process evidence
+
+These sources inform the process model and Router design. They are evidence and product-practice references, not copied implementations or proof that this V0 improves product outcomes.
+
+| Source | 2026 signal used | Design implication | Evidence boundary |
+|---|---|---|---|
+| [Figma 2026 AI Report](https://www.figma.com/blog/2026-ai-report/) | 8,403 survey responses and 639 qualitative interviews; 41% report AI changing teamwork; designers participating in development and developers doing design both increased | Role overlap and multiplayer collaboration require explicit decision ownership, not artifact-based handoff | Vendor research; useful scale and direction, not causal proof |
+| [Figma: 4 new ways to go from idea to product](https://www.figma.com/blog/4-new-ways-to-go-from-idea-to-product-with-ai-tools/) | Documents code → canvas → code, prototype-first, team-review, and design-system-grounded workflows | Router may enter from any artifact and should select the surface that exposes the current unknown | Product examples selected by Figma; not a neutral benchmark |
+| [Figma: What the design-to-code loop unlocks](https://www.figma.com/blog/what-the-design-to-code-loop-unlocks/) | Describes a roundtrip between production states, canvas, and code | Making is a loop across surfaces; context and intent must survive the roundtrip | Practitioner and product-team account |
+| [Google Labs: Introducing vibe design with Stitch](https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-ai-ui-design/) | Allows entry from business goals, text, images, or code; supports parallel exploration and rapid interactive refinement | Entry point and artifact order are dynamic; a shared surface can accelerate feedback | Product announcement; speed and capability are not validation evidence |
+| [Microsoft Research: New Future of Work 2026](https://www.microsoft.com/en-us/research/blog/new-future-of-work-ai-is-driving-rapid-change-uneven-benefits/) | Synthesizes research on AI changing collaboration and shifting people toward guiding, critiquing, and improving AI output | Human / AI authority and oversight belong in the shared operating state | Broad workplace synthesis, not product-design-specific causal evidence |
+| [Microsoft Research: Scaffolding Human-AI Collaboration](https://www.microsoft.com/en-us/research/publication/human-ai-collaboration-field-experiment/) | Field experiment with 388 employees found that one rigid behavioral protocol reduced document quality and production, while effects varied by intervention | Do not replace an old fixed process with a universal AI protocol; adapt structure to the decision and uncertainty | April 2026 arXiv preprint with stated design limitations; not direct validation of this Router |
+
 ## License boundary
 
 - MIT and Apache-2.0 sources may become explicit dependencies or attributed adapters after a separate implementation and notice review.

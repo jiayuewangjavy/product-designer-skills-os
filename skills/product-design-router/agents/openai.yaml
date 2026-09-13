@@ -1,4 +1,4 @@
 interface:
   display_name: "Product Design Router"
-  short_description: "Route product work by its riskiest unknown"
-  default_prompt: "Use $product-design-router to identify the highest-risk product unknown and recommend the smallest skill loop that can produce decision-changing evidence."
+  short_description: "Route product work through uncertainty and evidence"
+  default_prompt: "Use $product-design-router to identify the highest-risk product unknown, establish the collaboration and decision spine, and recommend the smallest skill loop that can produce decision-changing evidence."

@@ -15,10 +15,12 @@
 
 - Do not restart mechanically at broad discovery.
 - Do not immediately build a redesigned dashboard.
+- Name the existing prototype and raw test evidence as the current working artifacts; do not treat the dashboard canvas as the automatic source of truth.
 - Identify the missing interpretation of user evidence as the highest-risk unknown.
 - Route first to `learning-loop-readout` to separate observation from interpretation and determine what the feedback can support.
 - Route secondarily to `conceptual-model-design` only if the readout shows confusion about objects, actions, states, or the relationship between summaries and follow-up tasks.
 - Use `prototype-question` only after the target uncertainty is explicit.
+- State who owns the redesign decision, what AI may synthesize or propose, and which human review is required. If the owner is not supplied, mark it unresolved rather than inventing one.
 - Define an exit condition that can support, reject, or reframe the proposed redesign.
 
 ## Failure conditions
@@ -27,4 +29,6 @@
 - Treats “generic” as a confirmed interface problem.
 - Recommends visual polish without evidence.
 - Invokes every installed skill.
+- Chooses a working surface only because it is fastest, or assumes a shared canvas means shared understanding.
+- Lets AI silently become the owner of the redesign decision.
 - Claims the prototype has been validated merely because users saw it.

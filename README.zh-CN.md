@@ -16,11 +16,11 @@
 </p>
 
 <p align="center">
-  <img src="./assets/dynamic-learning-network.png" alt="把固定阶段接力编织成方向、制作与学习三个动态循环" width="100%">
+  <img src="./assets/dynamic-learning-network-v2.png" alt="产品设计路由器通过协作与决策主干连接方向、制作与学习三个动态循环" width="100%">
 </p>
 
-> **Design process 没有死，死的是固定的部门流水线。**
-> 从最大的未知开始，用最小 artifact 获得证据，再把学习回写到产品决定。
+> **AI-native design process 是一个 learning control loop。**
+> 从最大的未知开始，保留共享上下文与决策责任，用证据学习，再更新下一步。
 
 ## 为什么做这个项目
 
@@ -36,23 +36,25 @@ Product Designer Skills OS 不自动执行一条固定的 `Discovery → Design 
 brief · prototype · code · 用户信号 · 市场结果
                          ↓
               product-design-router
-          当前决定 + 最大未知 + 证据缺口
+        当前决定 + 最大未知 + 工作表面
                          ↓
               组合最小有效 Loop
                          ↓
        Direction ↔ Making ↔ Learning
+             ═ 协作与决策主干 ═
                          ↓
        学到了什么 · 改变了什么 · 下一个未知
                          └────────────↺ Router
 ```
 
-Router 负责三件事：
+Router 负责四件事：
 
-1. **Diagnose**：判断哪个未知最可能造成产品失败或昂贵返工。
-2. **Compose**：选择一个主要 Skill，只加入获得可信证据所必需的辅助 Skills。
-3. **Close and route again**：要求明确更新产品决定，再根据下一个最大未知进入新一轮。
+1. **Ground**：确认当前 artifact、decision owner、参与者以及 human / AI authority boundary。
+2. **Diagnose**：判断哪个未知最可能造成产品失败或昂贵返工。
+3. **Compose**：选择最合适的工作表面、一个主要 Skill，以及获得可信证据所必需的辅助 Skills。
+4. **Close and route again**：由责任人明确更新产品决定，再根据下一个最大未知进入新一轮。
 
-具体 Skills 负责完成产品工作；Router 负责判断：**为什么是这项工作、为什么现在做、获得什么证据就应该停止**。因此这套能力可以动态组合，但不会退化成一堆没有纪律的 Prompts。
+具体 Skills 负责完成产品工作；Router 负责判断：**为什么是这项工作、为什么现在做、应该在哪个表面完成、谁拥有决定，以及获得什么证据就应该停止**。因此这套能力可以动态组合，但不会退化成一堆没有纪律的 Prompts。
 
 ## 从哪里开始
 
@@ -104,7 +106,7 @@ Use $product-design-router to identify the highest-risk unknown in this product 
 
 | 网络角色 | Skill | 作用 |
 |---|---|---|
-| **核心 control plane** | **[`product-design-router`](./skills/product-design-router/)** | 判断最大未知、组合最小 Loop 并定义退出条件 |
+| **核心 control plane** | **[`product-design-router`](./skills/product-design-router/)** | 明确责任、判断最大未知、选择工作表面并组合最小 Loop |
 | Shared context | [`product-context`](./skills/product-context/) | 保存证据、假设、决定与约束 |
 | Direction | [`opportunity-and-assumption-map`](./skills/opportunity-and-assumption-map/) | 找到当前产品假设中风险最高的部分 |
 | Structure | [`conceptual-model-design`](./skills/conceptual-model-design/) | 建立角色、对象、关系、状态和规则 |
@@ -123,7 +125,14 @@ Use $product-design-router to identify the highest-risk unknown in this product 
 
 ## 跨 Skill Contract
 
-每个组合 Loop 都需要保留五件事：
+每个组合 Loop 先共享一条协作与决策主干：
+
+```text
+当前 artifact · 工作表面 · decision owner
+· 参与者与 agents · human / AI authority · 必要审批
+```
+
+然后保留五项学习记录：
 
 ```text
 我们已经知道什么
@@ -133,7 +142,7 @@ Use $product-design-router to identify the highest-risk unknown in this product 
 → 下一个最大的未知是什么
 ```
 
-完成 artifact 不代表 Loop 已经关闭。证据必须明确地保留、修改、否决或推迟一个产品决定。详细定义见 [`LOOP-CONTRACT.md`](./references/LOOP-CONTRACT.md)。
+完成 artifact 不代表 Loop 已经关闭。证据必须明确地保留、修改、否决或推迟一个产品决定；当工作在 canvas、prototype、code 与真实信号之间移动时，责任人仍然必须可见。详细定义见 [`LOOP-CONTRACT.md`](./references/LOOP-CONTRACT.md)。
 
 ## 边界
 

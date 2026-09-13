@@ -16,11 +16,11 @@
 </p>
 
 <p align="center">
-  <img src="./assets/dynamic-learning-network-en.png" alt="A rigid phase handoff being knitted into Direction, Making, and Learning loops" width="100%">
+  <img src="./assets/dynamic-learning-network-v2-en.png" alt="The Product Design Router connects Direction, Making, and Learning through a collaboration and decision spine" width="100%">
 </p>
 
-> **The design process is not dead. The fixed pipeline is.**
-> Start from the highest-risk unknown, create the smallest useful artifact, learn from evidence, and update the decision.
+> **AI-native design process is a learning control loop.**
+> Route from the highest-risk unknown, preserve shared context and decision ownership, learn from evidence, and update the next move.
 
 ## Why this exists
 
@@ -36,23 +36,25 @@ Product Designer Skills OS does not automate a fixed `Discovery → Design → B
 brief · prototype · code · user signal · market result
                           ↓
                product-design-router
-        decision + highest-risk unknown + evidence gap
+     decision + highest-risk unknown + working surface
                           ↓
             compose the smallest useful loop
                           ↓
        Direction ↔ Making ↔ Learning
+          ═ Collaboration & Decision Spine ═
                           ↓
       what we learned · what changed · next unknown
                           └──────────────↺ Router
 ```
 
-The Router performs three jobs:
+The Router performs four jobs:
 
-1. **Diagnose** — determine which unknown is most likely to cause failure or expensive rework.
-2. **Compose** — select one primary skill and only the supporting skills needed to produce credible evidence.
-3. **Close and route again** — require an explicit decision update, then use the next unknown to begin another loop.
+1. **Ground** — identify the working artifact, decision owner, contributors, and human / AI authority boundary.
+2. **Diagnose** — determine which unknown is most likely to cause failure or expensive rework.
+3. **Compose** — select the working surface, one primary skill, and only the support needed to produce credible evidence.
+4. **Close and route again** — require the accountable owner to update the decision, then use the next unknown to begin another loop.
 
-The specialist skills do the product work. The Router decides **why this work, why now, and what evidence is enough to stop**. This keeps the collection dynamic without turning it into an undisciplined set of prompts.
+The specialist skills do the product work. The Router decides **why this work, why now, where it should happen, who owns the decision, and what evidence is enough to stop**. This keeps the collection dynamic without turning it into an undisciplined set of prompts.
 
 ## Start here
 
@@ -104,7 +106,7 @@ Use $product-design-router to identify the highest-risk unknown in this product 
 
 | Network role | Skill | Purpose |
 |---|---|---|
-| **Core control plane** | **[`product-design-router`](./skills/product-design-router/)** | Diagnose the highest-risk unknown, compose the smallest loop, and define its exit condition |
+| **Core control plane** | **[`product-design-router`](./skills/product-design-router/)** | Ground ownership, diagnose the highest-risk unknown, select the working surface, and compose the smallest loop |
 | Shared context | [`product-context`](./skills/product-context/) | Preserve evidence, assumptions, decisions, and constraints |
 | Direction | [`opportunity-and-assumption-map`](./skills/opportunity-and-assumption-map/) | Find the riskiest belief behind a product bet |
 | Structure | [`conceptual-model-design`](./skills/conceptual-model-design/) | Model roles, objects, relationships, states, and rules |
@@ -123,7 +125,14 @@ Use $product-design-router to identify the highest-risk unknown in this product 
 
 ## The shared contract
 
-Every composed loop carries forward five things:
+Every composed loop shares a collaboration and decision spine:
+
+```text
+working artifact · working surface · decision owner
+· contributors and agents · human / AI authority · required approval
+```
+
+It then carries forward five learning fields:
 
 ```text
 what we knew
@@ -133,7 +142,7 @@ what we knew
 → the next unknown
 ```
 
-An artifact does not close a loop. Evidence must explicitly retain, revise, reject, or defer a product decision. See [`LOOP-CONTRACT.md`](./references/LOOP-CONTRACT.md).
+An artifact does not close a loop. Evidence must explicitly retain, revise, reject, or defer a product decision, and the accountable owner remains visible as work moves among canvas, prototype, code, and live signals. See [`LOOP-CONTRACT.md`](./references/LOOP-CONTRACT.md).
 
 ## Boundaries
 

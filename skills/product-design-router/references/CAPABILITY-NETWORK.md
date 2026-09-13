@@ -11,6 +11,21 @@ Use this reference when more than one uncertainty node is plausible.
 | Adoption & Market | Will the right people discover, choose, activate, and continue using it? | `position-and-launch-hypothesis` | conversion, activation, willingness to pay, cohorts, churn reasons |
 | Learning & Governance | Can signals be interpreted and safely change the next decision? | `learning-loop-readout`, `intent-preservation-check`, plus context and decision records | provenance, metric definitions, contradictions, version diffs, owners |
 
+## Collaboration and decision spine
+
+The spine is not a fourth loop or a required phase. It is the shared operating state that lets work move among Direction, Making, and Learning without losing context or silently transferring authority.
+
+For the current decision, retain only what is needed:
+
+- working artifact or source of truth;
+- decision owner and necessary contributors;
+- evidence and unresolved assumptions;
+- current working surface: source evidence, canvas, prototype, code, or live product;
+- human / AI authority boundary and required approval;
+- version or decision update produced by the loop.
+
+Choose the surface where the highest-risk unknown becomes observable. A canvas helps compare and align around alternatives; code exposes real states and constraints; a prototype tests a focused behavior; live signals show adoption or operational outcomes. Moving between surfaces is allowed when it preserves the decision context and produces better evidence.
+
 ## Loop patterns
 
 - `Direction`: signal → frame → choose a bet. Use when the central uncertainty is value or strategic direction.
