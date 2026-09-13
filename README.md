@@ -28,19 +28,37 @@ AI makes PRDs, flows, prototypes, interfaces, and code cheaper to produce. It ca
 
 Product Designer Skills OS does not automate a fixed `Discovery → Design → Build → Launch` sequence. Its router inspects what already exists—a brief, prototype, codebase, user signal, or market result—and chooses the smallest skill loop that can reduce the most consequential uncertainty.
 
+## How it works: the Router is the core
+
+[`product-design-router`](./skills/product-design-router/) is not simply one skill in the collection. It is the **control plane for the entire OS**.
+
 ```text
-             Direction Loop
-      Signals ↔ Frame ↔ Choose a Bet
-           ↙                 ↘
-Making Loop ↔ shared context ↔ Learning Loop
-Model ↔ Prototype ↔ Build      Ship ↔ Observe ↔ Adapt
+brief · prototype · code · user signal · market result
+                          ↓
+               product-design-router
+        decision + highest-risk unknown + evidence gap
+                          ↓
+            compose the smallest useful loop
+                          ↓
+       Direction ↔ Making ↔ Learning
+                          ↓
+      what we learned · what changed · next unknown
+                          └──────────────↺ Router
 ```
+
+The Router performs three jobs:
+
+1. **Diagnose** — determine which unknown is most likely to cause failure or expensive rework.
+2. **Compose** — select one primary skill and only the supporting skills needed to produce credible evidence.
+3. **Close and route again** — require an explicit decision update, then use the next unknown to begin another loop.
+
+The specialist skills do the product work. The Router decides **why this work, why now, and what evidence is enough to stop**. This keeps the collection dynamic without turning it into an undisciplined set of prompts.
 
 ## Start here
 
 | What you have now | Start with | Decision it helps unlock |
 |---|---|---|
-| “I do not know what to do next” | `product-design-router` | Which unknown deserves the next loop |
+| “I do not know what to do next” | **`product-design-router`** | Which unknown deserves the next loop |
 | An idea with scattered evidence | `product-context` + `opportunity-and-assumption-map` | Which product bet is worth testing |
 | A brief that does not translate into a coherent product | `conceptual-model-design` | What objects, actions, states, and rules the experience needs |
 | A prototype request that keeps expanding | `prototype-question` | What the minimum prototype must prove |
@@ -86,7 +104,7 @@ Use $product-design-router to identify the highest-risk unknown in this product 
 
 | Network role | Skill | Purpose |
 |---|---|---|
-| Control | [`product-design-router`](./skills/product-design-router/) | Route by uncertainty and define an exit condition |
+| **Core control plane** | **[`product-design-router`](./skills/product-design-router/)** | Diagnose the highest-risk unknown, compose the smallest loop, and define its exit condition |
 | Shared context | [`product-context`](./skills/product-context/) | Preserve evidence, assumptions, decisions, and constraints |
 | Direction | [`opportunity-and-assumption-map`](./skills/opportunity-and-assumption-map/) | Find the riskiest belief behind a product bet |
 | Structure | [`conceptual-model-design`](./skills/conceptual-model-design/) | Model roles, objects, relationships, states, and rules |

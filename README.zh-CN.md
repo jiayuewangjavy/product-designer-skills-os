@@ -28,19 +28,37 @@ AI 让 PRD、流程、Prototype、界面和代码的制作成本快速下降，�
 
 Product Designer Skills OS 不自动执行一条固定的 `Discovery → Design → Build → Launch` 流程。Router 会先检查已经存在的 brief、prototype、code、用户信号或市场结果，然后选择一个能够降低最大不确定性的最小 Skill Loop。
 
+## How it works：Router 是整个系统的核心
+
+[`product-design-router`](./skills/product-design-router/) 不只是十个 Skills 里的其中一个，而是整个 OS 的 **control plane**。
+
 ```text
-              Direction Loop
-       Signals ↔ Frame ↔ Choose a Bet
-            ↙                 ↘
-Making Loop ↔ shared context ↔ Learning Loop
-Model ↔ Prototype ↔ Build      Ship ↔ Observe ↔ Adapt
+brief · prototype · code · 用户信号 · 市场结果
+                         ↓
+              product-design-router
+          当前决定 + 最大未知 + 证据缺口
+                         ↓
+              组合最小有效 Loop
+                         ↓
+       Direction ↔ Making ↔ Learning
+                         ↓
+       学到了什么 · 改变了什么 · 下一个未知
+                         └────────────↺ Router
 ```
+
+Router 负责三件事：
+
+1. **Diagnose**：判断哪个未知最可能造成产品失败或昂贵返工。
+2. **Compose**：选择一个主要 Skill，只加入获得可信证据所必需的辅助 Skills。
+3. **Close and route again**：要求明确更新产品决定，再根据下一个最大未知进入新一轮。
+
+具体 Skills 负责完成产品工作；Router 负责判断：**为什么是这项工作、为什么现在做、获得什么证据就应该停止**。因此这套能力可以动态组合，但不会退化成一堆没有纪律的 Prompts。
 
 ## 从哪里开始
 
 | 你现在有什么 | 建议入口 | 帮助完成的决定 |
 |---|---|---|
-| “我不知道下一步该做什么” | `product-design-router` | 当前哪个未知最值得进入下一轮 |
+| “我不知道下一步该做什么” | **`product-design-router`** | 当前哪个未知最值得进入下一轮 |
 | 一个想法和分散的证据 | `product-context` + `opportunity-and-assumption-map` | 哪个产品假设值得验证 |
 | Brief 无法变成结构一致的产品 | `conceptual-model-design` | 体验需要哪些对象、动作、状态和规则 |
 | Prototype 范围不断变大 | `prototype-question` | 最小 Prototype 必须证明什么 |
@@ -86,7 +104,7 @@ Use $product-design-router to identify the highest-risk unknown in this product 
 
 | 网络角色 | Skill | 作用 |
 |---|---|---|
-| Control | [`product-design-router`](./skills/product-design-router/) | 根据未知路由并定义退出条件 |
+| **核心 control plane** | **[`product-design-router`](./skills/product-design-router/)** | 判断最大未知、组合最小 Loop 并定义退出条件 |
 | Shared context | [`product-context`](./skills/product-context/) | 保存证据、假设、决定与约束 |
 | Direction | [`opportunity-and-assumption-map`](./skills/opportunity-and-assumption-map/) | 找到当前产品假设中风险最高的部分 |
 | Structure | [`conceptual-model-design`](./skills/conceptual-model-design/) | 建立角色、对象、关系、状态和规则 |
