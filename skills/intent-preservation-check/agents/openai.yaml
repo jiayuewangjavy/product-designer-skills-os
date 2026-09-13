@@ -1,0 +1,4 @@
+interface:
+  display_name: "Intent Preservation Check"
+  short_description: "Detect product intent drift after AI edits"
+  default_prompt: "Use $intent-preservation-check to compare this revision with the confirmed product intent and identify unauthorized drift."

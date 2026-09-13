@@ -1,0 +1,4 @@
+interface:
+  display_name: "Interactive Prototype"
+  short_description: "Build the minimum testable interaction"
+  default_prompt: "Use $interactive-prototype to build the smallest runnable interaction that can answer the supplied prototype question."

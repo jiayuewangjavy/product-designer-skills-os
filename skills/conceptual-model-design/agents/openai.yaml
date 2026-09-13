@@ -1,0 +1,4 @@
+interface:
+  display_name: "Conceptual Model Design"
+  short_description: "Model product objects, states, and rules"
+  default_prompt: "Use $conceptual-model-design to turn this product evidence into an inspectable model and expose the highest-risk structural decision."

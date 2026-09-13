@@ -1,0 +1,4 @@
+interface:
+  display_name: "Learning Loop Readout"
+  short_description: "Turn product signals into decision updates"
+  default_prompt: "Use $learning-loop-readout to interpret these product signals and state exactly which assumptions, context, and decisions should change."

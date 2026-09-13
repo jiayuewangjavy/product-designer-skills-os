@@ -1,0 +1,4 @@
+interface:
+  display_name: "Prototype Question"
+  short_description: "Define what a prototype must prove"
+  default_prompt: "Use $prototype-question to define the smallest prototype that can answer this product decision and its stopping rule."

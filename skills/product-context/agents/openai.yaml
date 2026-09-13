@@ -1,0 +1,4 @@
+interface:
+  display_name: "Product Context"
+  short_description: "Build traceable shared product context"
+  default_prompt: "Use $product-context to create or update this initiative's product context, separating evidence, assumptions, decisions, and preferences."

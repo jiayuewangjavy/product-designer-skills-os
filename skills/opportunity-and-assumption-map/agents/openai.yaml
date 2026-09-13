@@ -1,0 +1,4 @@
+interface:
+  display_name: "Opportunity and Assumption Map"
+  short_description: "Find the riskiest product assumption"
+  default_prompt: "Use $opportunity-and-assumption-map to identify the riskiest assumption in this product bet and define the smallest credible evidence probe."

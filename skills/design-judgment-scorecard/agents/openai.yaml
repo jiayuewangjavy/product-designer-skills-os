@@ -1,0 +1,4 @@
+interface:
+  display_name: "Design Judgment Scorecard"
+  short_description: "Make design critique evidence-based"
+  default_prompt: "Use $design-judgment-scorecard to evaluate this design against its product intent and identify the three highest-value changes."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Position and Launch Hypothesis"
+  short_description: "Test positioning with a measurable launch"
+  default_prompt: "Use $position-and-launch-hypothesis to define who this product is for, why they should choose it, and the smallest measurable launch test."
