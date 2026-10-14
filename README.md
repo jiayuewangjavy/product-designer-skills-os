@@ -163,6 +163,18 @@ This is a **working V0**, not a finished universal design curriculum. Static val
 
 Try the Router on a real brief, prototype, or product signal. If it chooses the wrong unknown, opens too large a loop, or loses a confirmed decision, [open an issue](https://github.com/jiayuewangjavy/product-designer-skills-os/issues).
 
+## Official distribution and commercial use
+
+This is the **official upstream repository** maintained by [jiayuewangjavy](https://github.com/jiayuewangjavy). Only marketplace listings explicitly linked or confirmed by the maintainer should be considered official; no marketplace listing is announced here yet.
+
+The public collection remains MIT-licensed. The MIT License permits third-party commercial redistribution with its required copyright and license notice; the project documentation does not revoke those rights. Please distinguish independent forks or repackaged distributions from maintainer-endorsed releases.
+
+- [Project name and official attribution](./TRADEMARK.md)
+- [Commercial distribution and possible future editions](./COMMERCIAL.md)
+- [Contribution guidelines and rights](./CONTRIBUTING.md)
+
+For usage feedback, problems with routing, or attribution concerns, [open an issue](https://github.com/jiayuewangjavy/product-designer-skills-os/issues).
+
 ## License
 
 Original package content is released under the [MIT License](./LICENSE). Third-party sources retain their own licenses; no third-party implementation is included in this repository.

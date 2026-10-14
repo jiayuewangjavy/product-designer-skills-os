@@ -163,6 +163,18 @@ Use $product-design-router to identify the highest-risk unknown in this product 
 
 请用一个真实 brief、prototype 或产品信号测试 Router。如果它选择了错误的未知、打开了过大的 Loop，或者丢失了已确认决定，可以 [提交 Issue](https://github.com/jiayuewangjavy/product-designer-skills-os/issues)。
 
+## 官方发布与商业使用
+
+这是由 [jiayuewangjavy](https://github.com/jiayuewangjavy) 维护的**官方源仓库**。只有维护者明确确认或从本仓库链接的 Marketplace 上架页面才视为官方发布；目前本仓库尚未公布 Marketplace 上架链接。
+
+公开版本继续采用 MIT License。该许可允许第三方在保留规定的版权与许可声明等条件下进行商业再分发；新增说明不会撤销既有 MIT 授权。独立 Fork、重新打包版本不得冒充维护者官方发行或暗示获得背书。
+
+- [项目名称与官方身份说明](./TRADEMARK.md)
+- [商业发行与未来版本规划](./COMMERCIAL.md)
+- [贡献指南与授权边界](./CONTRIBUTING.md)
+
+欢迎通过 [GitHub Issues](https://github.com/jiayuewangjavy/product-designer-skills-os/issues) 提交使用反馈、Router 问题或来源标注问题。
+
 ## License
 
 本项目原创内容使用 [MIT License](./LICENSE)。第三方来源继续使用各自的许可证；本仓库没有包含第三方实现。
