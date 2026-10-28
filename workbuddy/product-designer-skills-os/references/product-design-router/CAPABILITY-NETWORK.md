@@ -33,4 +33,3 @@ Choose the surface where the highest-risk unknown becomes observable. A canvas h
 - `Learning`: ship ↔ observe ↔ interpret ↔ adapt. Use when real-world behavior exists but has not yet changed product context or decisions.
 
 Loops may nest or jump nodes. Select the fewest skills that can produce decision-changing evidence.
-

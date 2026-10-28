@@ -78,4 +78,3 @@
 - Decision to make:
 - Highest-risk assumption:
 - Recommended next skill or validation:
-

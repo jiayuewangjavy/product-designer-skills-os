@@ -41,4 +41,3 @@ Every skill may be called independently. A composed loop keeps one collaboration
 The spine may stay stable while work moves from source evidence to canvas, prototype, code, or a live product. Update it whenever ownership, authority, or the canonical artifact changes.
 
 An artifact does not close a loop. A loop closes only when evidence is interpreted and a product decision is explicitly retained, changed, rejected, or deferred by the accountable owner.
-
