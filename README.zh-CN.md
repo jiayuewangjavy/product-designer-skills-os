@@ -70,6 +70,10 @@ Router 负责四件事：
 | 产品需要真实采用，而不只是发一条 Launch Post | `position-and-launch-hypothesis` | 谁会采用，以及什么信号才有意义 |
 | 已经有测试、使用、Launch 或运营结果 | `learning-loop-readout` | 哪个假设、上下文或决定应该改变 |
 
+## WorkBuddy workshop 版
+
+WorkBuddy 用户可直接下载[整合技能 ZIP](./workbuddy/product-designer-skills-os.zip)，按[中文安装与 60 分钟 workshop 指南](./workbuddy/README.zh-CN.md)上传使用。一个包包含全部 10 个能力及参考资料，不依赖 Codex 的调用语法。客户端导入和行为仍需实测；这不代表已上架技能市场。
+
 ## 安装
 
 先查看仓库中可以安装的 Skills：
@@ -178,3 +182,4 @@ Use $product-design-router to identify the highest-risk unknown in this product 
 ## License
 
 本项目原创内容使用 [MIT License](./LICENSE)。第三方来源继续使用各自的许可证；本仓库没有包含第三方实现。
+

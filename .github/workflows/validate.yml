@@ -20,3 +20,6 @@ jobs:
           python-version: "3.12"
       - name: Validate all skills
         run: python scripts/validate_skills.py
+
+      - name: Validate WorkBuddy package
+        run: python scripts/build_workbuddy.py --check

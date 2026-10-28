@@ -70,6 +70,10 @@ The specialist skills do the product work. The Router decides **why this work, w
 | A product that needs users, not just a launch post | `position-and-launch-hypothesis` | Who should adopt it and which signal matters |
 | Test, usage, launch, or operational results | `learning-loop-readout` | Which assumption, context, or decision should change |
 
+## WorkBuddy workshop
+
+For WorkBuddy, download the [single-skill ZIP](./workbuddy/product-designer-skills-os.zip) and follow the [Chinese installation guide and 60-minute workshop](./workbuddy/README.zh-CN.md). The package bundles all 10 capabilities and references without Codex-specific invocation syntax. Client import and behavioral verification remain required; this is not a marketplace listing.
+
 ## Install
 
 List the available skills without installing:
@@ -178,3 +182,4 @@ For usage feedback, problems with routing, or attribution concerns, [open an iss
 ## License
 
 Original package content is released under the [MIT License](./LICENSE). Third-party sources retain their own licenses; no third-party implementation is included in this repository.
+
